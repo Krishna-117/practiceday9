@@ -12,11 +12,16 @@
             font: 20px sans-serif;
             background: khaki;
         }
+        p.highlight{
+            background: green;
+        }
     </style>
     <script>
         $(document).ready(function(){
-            $("p").click(function(){
-                $(this).slideUp();
+            $("p").hover(function(){
+                $(this).addClass("highlight");
+            }, function(){
+                $(this).removeClass("highlight");
             });
         });
     </script>
