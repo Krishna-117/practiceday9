@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js"></script>
+    <script>
+        $(document).ready(function(){
+            $("tr:even").css("background","yellow");
+            $("tr:odd").css("background","cyan");
+            $("p:first").css("background","blue");
+            $("p:nth(1)").css("background","pink");
+            $("p:nth(2)").css("background","pink");
+            $("p:last").css("background","silver");
+            $("form :text").css("background","purple");
+            $("form :password").css("background","yellow");
+            $("form :submit").css("background","red");
+        })
+    </script>
+    <title>JQuery Custom Selectors</title>
+</head>
+<body>
+    <table border="1">
+        <thead>
+            <tr>
+                <th>No.</th>
+                <th>Name</th>
+                <th>Email</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>1</td>
+                <td>Krishna</td>
+                <td>Krishna@gmail.com</td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td>Jyoti</td>
+                <td>Jyoti@gmail.com</td>
+            </tr>
+            <tr>
+                <td>3</td>
+                <td>Ravi</td>
+                <td>Ravi@gmail.com</td>
+            </tr>
+            <tr>
+                <td>4</td>
+                <td>Trishul</td>
+                <td>Trishul@gmail.com</td>
+            </tr>
+        </tbody>
+    </table>
+    <p>This is tank.</p>
+    <p>This is missile.</p>
+    <p>This is rafale</p>
+    <p>This is bomb.</p>
+    <form >
+        <label>Name: <input type="text"></label>
+        <label>Password:<input type="password"></label>
+        <input type="submit" value="Sign in">
+    </form>
+</body>
+</html>
