@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js"></script>
+    <title>JQuery Traversing</title>
+    <style>
+        .highlight{
+            background: yellow;
+        }
+    </style>
+    <script>
+        $(document).ready(function(){
+            //$("body").parent().addClass("highlight");
+            $("li").parent().addClass("highlight");
+            });
+    </script>
+</head>
+<body>
+   <div class="container">
+       <h2>This is my country.</h2>
+       <p>This is my office.</p>
+       <ul>
+           <li>This ia ok. </li>
+           <li>This is not ok.</li>
+       </ul>
+   </div>
+</body>
+</html>
