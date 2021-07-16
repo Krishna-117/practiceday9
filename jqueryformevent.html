@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js"></script>
+    <title>JQuery Events</title>
+    <style>
+        p{
+            padding: 20px;
+            font: 20px sans-serif;
+            background: khaki;
+        }
+        p.highlight{
+            background: green;
+        }
+    </style>
+    <script>
+        $(document).ready(function(){
+            $("select").change(function(){
+               var selectedOptions= $(this).find(":selected").val();
+               alert("Ypu have selected : "+ selectedOptions);
+            });
+        });
+    </script>
+
+</head>
+<body>
+    <form>
+        <label>Country</label>
+        <select>
+            <option>India</option>
+            <option>Usa</option>
+            <option>Australia</option>
+            <option>Japan</option>
+            <option>China</option>
+        </select>
+    </form>
+    <p><strong>Note:</strong>Select a country of your choice.</p>
+</body>
+</html>

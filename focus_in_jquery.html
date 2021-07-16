@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js"></script>
+    <title>JQuery Focus Events</title>
+    <style>
+        label{
+            display: block;
+            margin: 5px 0;;
+        }
+        label span{
+            display:none;
+        }
+    </style>
+    <script>
+        $(document).ready(function(){
+            $("input").focus(function(){
+               $(this).next("span").show().fadeOut("slow");
+               
+            });
+        });
+    </script>
+
+</head>
+<body>
+    <form>
+        <label>Name:<input type="text"><span>Focus Fire</span></label>
+        <label>Password:<input type="password"><span>Focus Fire</span></label>
+        <input type="submit" value="Sign in">
+    </form>
+    <p><strong>Note:</strong>Select a country of your choice.</p>
+</body>
+</html>
